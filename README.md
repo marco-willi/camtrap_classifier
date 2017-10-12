@@ -86,8 +86,11 @@ def predict_images():
                    '/models/model2.hdf5']
 
     # output path / filenames
-    output_path = /data/predictions
+    output_path = '/data/predictions'
     out_file_names = ['predictions_model1.csv', 'predictions_model2.csv']
+    
+    # image path
+    image_path = '/data/images'
 
     # model cfg files
     model_cfg_jsons = ['/models/model1_cfg.json',
@@ -103,7 +106,7 @@ def predict_images():
             model_cfg_json=model_cfg_json)
 
         # predict images in path
-        classifier.predict_path(path=pred_path, output_path=output_path,
+        classifier.predict_path(path=image_path, output_path=output_path,
                                 output_file_name=output_file_name)
 
 if __name__ == "__main__":
