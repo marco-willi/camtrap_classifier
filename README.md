@@ -82,16 +82,16 @@ from classifier import CamTrapClassifier
 
 def predict_images():
     # models
-    model_files = [/models/model1.hdf5',
-                   /models/model2.hdf5']
+    model_files = ['/models/model1.hdf5',
+                   '/models/model2.hdf5']
 
     # output path / filenames
     output_path = /data/predictions
     out_file_names = ['predictions_model1.csv', 'predictions_model2.csv']
 
     # model cfg files
-    model_cfg_jsons = [/models/model1_cfg.json',
-                       /models/model2_cfg.json']
+    model_cfg_jsons = ['/models/model1_cfg.json',
+                       '/models/model2_cfg.json']
 
 
     for model_file, model_cfg_json, output_file_name in \
