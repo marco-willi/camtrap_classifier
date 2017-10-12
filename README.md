@@ -52,7 +52,7 @@ directory/
       - Default: False (recommended)
 ```
 
-3. Function predict_path to run classifier, produced a csv with predictions
+3. Function predict_path to run classifier, produces a csv with predictions
 ```
   Parameters
   ------------
