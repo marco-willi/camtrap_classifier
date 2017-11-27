@@ -151,7 +151,7 @@ class CamTrapClassifier(object):
 
         # check batch_size
         assert type(batch_size) == int,\
-            "batch_size has to be an integer, is %s" % type(eval(batch_size))
+            "batch_size has to be an integer, is %s" % type(batch_size)
 
         # fit data generator on input data
         if self.pre_processing is None:
