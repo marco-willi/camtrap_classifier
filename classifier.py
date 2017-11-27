@@ -150,7 +150,7 @@ class CamTrapClassifier(object):
         output_path = os.path.join(output_path, "")
 
         # check batch_size
-        assert type(eval(batch_size)) == int,\
+        assert type(batch_size) == int,\
             "batch_size has to be an integer, is %s" % type(eval(batch_size))
 
         # fit data generator on input data
