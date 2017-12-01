@@ -165,6 +165,10 @@ class CamTrapClassifier(object):
                     class_mode='sparse',
                     seed=123,
                     shuffle=False)
+                    
+            # check number of files found
+            assert generator.n > 0,\
+                "No images found in sub-directories of %s" % path
 
             # Fit data generator if required
             if any([self.keras_datagen.featurewise_std_normalization,
@@ -195,6 +199,10 @@ class CamTrapClassifier(object):
                     class_mode='sparse',
                     seed=123,
                     shuffle=False)
+
+            # check number of files found
+            assert generator.n > 0,\
+                "No images found in sub-directories of %s" % path
 
         # predict whole set
         print("Starting to predict images in path")

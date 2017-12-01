@@ -15,9 +15,10 @@ directory/
           -/sub-directory2/img1.jpeg, img3.jpeg, ...
           -/...
 ```
-4. Installation of Tensorflow and Keras
-* https://keras.io/#installation
-* https://www.tensorflow.org/install/
+4. Installation of all required modules (python3)
+```
+pip install -r requirements.txt
+```
 
 ## Run Classifier
 
@@ -88,7 +89,7 @@ def predict_images():
     # output path / filenames
     output_path = '/data/predictions'
     out_file_names = ['predictions_model1.csv', 'predictions_model2.csv']
-    
+
     # image path
     image_path = '/data/images'
 
